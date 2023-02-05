@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.1s ease;
+  background-color: #3a3a3a;
+}
+body {
+  margin: 0 15%;
+}
+
+#h1_nav {
+  margin-top: 20px;
+  color: #919191;
+  text-align: center;
+}
+.nav {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav a {
+  color: #919191;
+  text-transform: uppercase;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main textarea{
+  background-color: #444444;
+  color: #cecece;
+  border: 0;
+  outline: 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 80%;
+  height: 500px;
+  overflow-wrap: break-word;
+  resize: none;
+  font-size: 1.1rem;
+}
+.main textarea::-webkit-scrollbar {
+  width: 15px;
+  background-color: #f5f5f5;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.main textarea::-webkit-scrollbar-thumb {
+  background-color: #3a3a3a;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+}
+.main input {
+  font-size: 1.2rem;
+  width: 100%;
+  background-color: #444444;
+  border: none;
+  outline: none;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+  opacity: 1;
+  min-height: 51px;
+  color: #919191;
+  margin: 10px;
+}
+.main button {
+  margin: 10px;
+  font-size: 1.1rem;
+  background-color: #444444;
+  color: #919191;
+  border: 0;
+  outline: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 100%;
+}
+.cutlinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cutlinks input {
+  font-size: 2.2rem;
+  width: 35rem;
+  background-color: #444444;
+  border: 1px solid #919191;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+  opacity: 1;
+  min-height: 51px;
+  margin: 5px;
+  color: #919191;
+  outline: none;
+}
+.cutlinks button {
+  font-size: 1.1rem;
+  background-color: #444444;
+  color: #919191;
+  padding: 1rem;
+  border: 1px solid #919191;
+  border-radius: 0.5rem;
+  margin: 5px;
+}
+.personal {
+  display: flex;
+  justify-content: center;
+}
+.personal input{
+  font-size: 1.2rem;
+  width: 20rem;
+  background-color: #444444;
+  border: 1px solid #919191;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+  opacity: 1;
+  min-height: 51px;
+  color: #919191;
+  outline: none;
+}
+.paste h1 {
+  color: #919191;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.paste textarea {
+  background-color: #444444;
+  color: #cecece;
+  border: 0;
+  outline: 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 80%;
+  height: 500px;
+  overflow-wrap: break-word;
+  resize: none;
+  font-size: 1.1rem;
+}
+.paste textarea::-webkit-scrollbar {
+  width: 15px;
+  background-color: #f5f5f5;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.paste textarea::-webkit-scrollbar-thumb {
+  background-color: #3a3a3a;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+}
+.paste {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.status-con {
+  text-align: center;
+  color: #919191;
+  margin-top: 5px;
+}
+.status-con a {
+  color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  body {
+    margin: 0 2rem;
+  }
+  .main textarea{
+    width: 90%;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .paste {
+    flex-direction: column;
+  }
+  .main input {
+    width: 100%;
+    margin: 0;
+    margin-top: 10px;
+  }
+  .main button {
+    margin: 0;
+    margin-top: 10px;
+  }
+  .cutlinks {
+    flex-direction: column;
+  }
+  .cutlinks input {
+    width: 100%;
+  }
+  .cutlinks button {
+    width: 100%;
+  }
+  .personal input{
+    width: 100%;
+    margin-top: 5px;
+  }
+}
